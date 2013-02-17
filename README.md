@@ -9,7 +9,7 @@
 <h2>Setup</h2>
  <li>
   <ul><> Download the Zip-File.</ul>
-  <ul><> Extract all inside ZipFile in a folder, let named<span>FolderName.</span></ul>
+  <ul><> Extract all inside ZipFile in a folder, let named <h4>FolderName.</h4></ul>
   <ul><> Save that <span>FolderName</span> in <span>C://xampp/htdocs/</span>
  </li>
 <br>
