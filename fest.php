@@ -21,7 +21,8 @@
 	    if(strcmp($q,$b)==0)
 		{
 		    $z = $result[$a-2];
-            $newdata = file_get_contents("http://www.sdslabs.co.in/muzi/ajax/album?id=$z"); // for real one content should from [there]'s [that]
+            $newdata = file_get_contents("http://www.sdslabs.co.in/muzi/ajax/album?id=$z"); 
+            // for real one content should from [there]'s [that]
             
 			
 			    
