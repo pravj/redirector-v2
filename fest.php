@@ -1,7 +1,7 @@
 <?php
     $p = $_POST["song"];
     $q = $_POST["album"];
-	$data = file_get_contents("a1.txt");
+	$data = file_get_contents("data.txt");
   //$data = file_get_contents("http://www.sdslabs.co.in/muzi/ajax/album/list.php");  
   // for real one content should from [album/list.php]
 	//echo $data;
