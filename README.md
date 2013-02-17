@@ -8,7 +8,7 @@
 <br>
 <h2>Setup</h2>
  <li>
-  <ul><> Download the Zip-File.</ul>
+  <ul><> Download the <a href="https://github.com/pravj/redirector-v2/archive/master.zip">Zip-File</a></ul>
   <ul><> Extract all inside ZipFile in a folder, let named [FolderName]</ul>
   <ul><> Save that [FolderName] in <span>C://xampp/htdocs/</span>
  </li>
