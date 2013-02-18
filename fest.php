@@ -1,45 +1,43 @@
 <?php
-    $p = $_POST["song"];
-    $q = $_POST["album"];
-	//$data = file_get_contents("data.txt"); [ alternate is available ]
+        //taking song and album input from html page
+        $p = $_POST["song"];
+        $q = $_POST["album"];
+        //$data = file_get_contents("data.txt"); [ but alternate is available ]
+        //store the page content on that page
 	$data = file_get_contents("http://www.sdslabs.co.in/muzi/ajax/album/list.php");
-	//echo $data;
+	//replacing undesired strings 
 	$t1 = str_replace('":"',",",$data);
-	//echo $t1;
 	$t2 = str_replace('","',",",$t1);
-	//echo $t2;
 	$t3 = str_replace('"},{"',",",$t2);
-	//echo $t3;
 	$t4 = str_replace('[{"',"",$t3);
-	//echo $t4;
 	$t5 = str_replace('"}]',"",$t4);
 	//echo $t5; now experimenting :)
-	//$input = "461 Ocean Boulevard"; // it is name of album
+	//separte all by comma(,) 
 	$result = explode(",",$t5);
 	foreach($result as $a=>$b)
 	{
-	    ///////////////till this everything is under action\\\\\\\\\\\\\\\\trying to re-start process in loop
+	    ///////////////till this everything is under action
+	    ///////////////trying to re-start process in loop
+	    //compare strings $q and $b for equality
 	    if(strcmp($q,$b)==0)
 		{
+                    //extracting 2nd element to left of equaly matched string[the album name]
 		    $z = $result[$a-2];
-            $newdata = file_get_contents("http://www.sdslabs.co.in/muzi/ajax/album?id=$z"); 
-            // for real one content should from [there]'s [that]
-            
-			
-			    
-	//echo $data;
-	$d1 = str_replace('","',",",$newdata);
-	//echo $d1;
-	$d2 = str_replace('":"',",",$d1);
-	//echo $d2;
-	$d3 = str_replace('"},{"',",",$d2);
-    //echo $d3;
-	$d4 = str_replace('"',"",$d3);
-	//echo $d4;
-	$d5 = str_replace("{","",$d4);
-	//echo $d5;
+		    //store the page content on that inner one page
+                    $newdata = file_get_contents("http://www.sdslabs.co.in/muzi/ajax/album?id=$z"); 
+                    // for real one content should from [there]'s [that]
+                    //again replacing undesired strings
+	            $d1 = str_replace('","',",",$newdata);
+	            $d2 = str_replace('":"',",",$d1);
+	            $d3 = str_replace('"},{"',",",$d2);
+	            $d4 = str_replace('"',"",$d3);
+	            $d5 = str_replace("{","",$d4);
+	//echo 
 	$d6 = str_replace("}","",$d5);
 	//echo $d6;
+			
+			    
+	
 	$d7 = str_replace("[","",$d6);
 	//echo $d7;
 	$d8 = str_replace("]","",$d7);
