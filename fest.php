@@ -1,7 +1,8 @@
 <?php
     $p = $_POST["song"];
     $q = $_POST["album"];
-	$data = file_get_contents("data.txt");
+	//$data = file_get_contents("data.txt"); [ alternate is available ]
+	$data = file_get_contents("http://www.sdslabs.co.in/muzi/ajax/album/list.php");
 	//echo $data;
 	$t1 = str_replace('":"',",",$data);
 	//echo $t1;
