@@ -3,7 +3,7 @@
 <h2>Requirement</h2>
  <li>
   <ul><> all you need to install Xampp</ul>
-  <ul><> Can be downloaded from <a href="www.apachefriends.org/en/xampp.html">Xampp</a>.</ul>
+  <ul><> Can be downloaded from <a href="http://www.apachefriends.org/en/xampp.html">Xampp</a>.</ul>
  </li>
 <br>
 <h2>Setup</h2>
