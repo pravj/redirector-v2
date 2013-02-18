@@ -9,13 +9,12 @@
 <h2>Setup</h2>
  <li>
   <ul><> Download the <a href="https://github.com/pravj/redirector-v2/archive/master.zip">Zip-File</a></ul>
-  <ul><> Extract all inside ZipFile in a folder, let named [FolderName]</ul>
-  <ul><> Save that [FolderName] in <span>C://xampp/htdocs/</span>
+  <ul><> Extract all inside ZipFile at C://xampp/htdocs/</ul>
  </li>
 <br>
 <h2>Download</h2>
  <li>
-  <ul><> now open your Web-Browser and go to localhost/[FolderName]/start.htm</ul>
+  <ul><> now open your Web-Browser and go to localhost/start.htm</ul>
   <ul><> Enter your desired Album and Song and Enjoy.Life</ul>
   <ul><> Make sure that you are making input properly</ul>
  </li>
