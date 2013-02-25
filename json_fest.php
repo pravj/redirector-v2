@@ -1,7 +1,7 @@
 <?php
   $album = $_POST["album"];
 	$song = $_POST["song"];
-	$maindata = file_get_contents("db.txt"); //should be @ album/list.php
+	$maindata = file_get_contents("http://sdslabs.co.in/muzi/ajax/album/list.php");
 	$m_stg = substr_count($maindata,"language");
 	$mdsolve = json_decode($maindata,true);
 	for($i=0;$i<$m_stg;$i++)
