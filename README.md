@@ -1,5 +1,5 @@
 <h2>redirector#v2</h2> allow to download songs from <a href="http://sdslabs.co.in/muzi/">"Muzi"</a>.<br>
-[a great online music player inside IITR Campus by <a href="http://sdslabs.co.in/home/">SDSLabs</a> ].<br>
+[a great online music player inside IITR Campus by <a href="https://github.com/sdslabs">SDSLabs</a> ].<br>
 <h2>Requirement</h2>
  <li>
   <ul><> all you need to install Xampp</ul>
